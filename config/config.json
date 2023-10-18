@@ -1,0 +1,40 @@
+{
+    "developers": ["741317528915017875"],
+    "client": {
+        "intents": [
+            "Guilds",
+            "GuildPresences",
+            "GuildMembers",
+            "GuildMessages",
+            "DirectMessages"
+        ],
+        "partials": ["Message", "Channel", "User", "Reaction"]
+    },
+    "veso": {
+        "min": 1,
+        "max": 150
+    },
+    "emotes": {
+        "confirm": "✅",
+        "deny": "❌",
+        "previous": "◀️",
+        "next": "▶️",
+        "refresh": "🔄",
+        "create": "🔨",
+        "select": "🖱",
+        "congra": "🎉",
+        "colors": {
+            "red": "🟥",
+            "yellow": "🟨",
+            "blue": "🟦",
+            "green": "🟩",
+            "orange": "🟧",
+            "purple": "🟪",
+            "black": "⬛",
+            "white": "⬜"
+        }
+    },
+    "jobs": {
+        "dailyResultNotification": "*/5 * * * * *"
+    }
+}

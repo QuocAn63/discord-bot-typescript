@@ -1,0 +1,46 @@
+services:
+  bot:
+    build:
+      context: .
+      target: dev
+    environment:
+      POSTGRES_HOST: discord_bot-db-1
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD_FILE: /run/secrets/db-password
+      POSTGRES_DB: discord_bot
+      POSTGRES_PORT: 5432
+      BOT_CLIENT_ID: 1142296357701431398
+      B0T_TOKEN: MTE0MjI5NjM1NzcwMTQzMTM5OA.GQgSwG.UZshntfwSM98mKYvx5bQtwVvRXgRvcoYfrEFyw
+    ports:
+      - 3000:3000
+    depends_on:
+      db:
+        condition: service_healthy
+    secrets:
+      - db-password
+    volumes:
+      - ./src:/usr/src/app/src
+  db:
+    image: postgres
+    restart: always
+    user: postgres
+    secrets:
+      - db-password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/pgdata/init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    environment:
+      - POSTGRES_DB=discord_bot
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+    expose:
+      - 5432
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  pgdata:
+secrets:
+  db-password:
+    file: db/password.txt

@@ -1,0 +1,225 @@
+{
+    "embeds": {
+        "banveso": {
+            "title": "Khởi tạo chương trình Xổ Số Kiến Cắn",
+            "description": "Kênh này sẽ trở thành kênh thông báo chính thức của chương trình Xổ Số Kiến Cắn.\n Các phiên xổ số sẽ được diễn ra vào lúc 16:30 hằng ngày.\n**/help** để hiển thị các câu lệnh liên quan.",
+            "fields": [
+                {
+                    "name": "Guild",
+                    "value": "{:GUILD_NAME}"
+                },
+                {
+                    "name": "Kênh thông báo",
+                    "value": "{:CHANNEL_NAME}"
+                },
+                {
+                    "name": "Thời gian",
+                    "value": "{:DRAW_TIME} hằng ngày"
+                },
+                {
+                    "name": "Phần thưởng",
+                    "value": "{:PRIZE}"
+                }
+            ],
+            "author": {
+                "name": "{:AUTHOR_NAME}"
+            }
+        },
+        "muaveso": {
+            "title": "Xố Số Kiến Cắn",
+            "description": "Cảm ơn **{:USERNAME}** đã tham gia Xổ Số Kiến Cắn.\nChúc bạn may mắn.",
+            "fields": [
+                {
+                    "name": "\u200b",
+                    "value": "\u200b"
+                },
+                {
+                    "name": "Mã vòng quay",
+                    "value": "{:DRAW_ID}"
+                },
+                {
+                    "name": "Thời gian tham gia",
+                    "value": "{:CURRENT_TIME}",
+                    "inline": true
+                },
+                {
+                    "name": "Thời gian xổ số",
+                    "value": "{:DRAW_TIME}",
+                    "inline": true
+                },
+                {
+                    "name": "Giải thưởng",
+                    "value": "{:PRIZE}"
+                },
+                {
+                    "name": "Số may mắn của bạn",
+                    "value": "{:LUCKY_NUMBER}"
+                }
+            ]
+        },
+        "ketquaxoso": {
+            "title": "Kết quả Xố Số Kiến Cắn",
+            "fields": [
+                {
+                    "name": "\u200b",
+                    "value": "\u200b"
+                },
+                {
+                    "name": "Mã vòng quay",
+                    "value": "{:DRAW_ID}"
+                },
+                {
+                    "name": "Tạo vào lúc",
+                    "value": "{:DRAW_TIME}",
+                    "inline": true
+                },
+                {
+                    "name": "Kết quả",
+                    "value": "{:RESULT}"
+                },
+                {
+                    "name": "Số của bạn",
+                    "value": "{:NUMBER}"
+                }
+            ]
+        },
+        "lichsuxoso": {
+            "title": "Lịch sử Xổ Số Kiến Cắn",
+            "description": "Hiển thị 10 phiên Xổ Số Kiến Cắn gần đây nhất.",
+            "footer": {
+                "text": "Page {:CURRENT_PAGE}/{:TOTAL_PAGE}"
+            }
+        },
+        "lichsuxosoHeaders": [{
+            "name": "Mã vòng quay",
+            "value": "",
+            "inline": true
+        },
+        {
+            "name": "Thời gian",
+            "value": "",
+            "inline": true
+        },
+        {
+            "name": "Kết quả",
+            "value": "",
+            "inline": true
+        }],
+        "lichsuxosoField": [{
+            "name": "",
+            "value": "{:DRAW_ID}",
+            "inline": true
+        },
+        {
+            "name": "",
+            "value": "{:DRAW_TIME}",
+            "inline": true
+        },{
+            "name": "",
+            "value": "{:RESULT}",
+            "inline": true
+        }],
+        "vecuatoiHeader": {
+            "title": "Xổ Số Kiến Cắn - Vé Của Tôi",
+            "description": "Danh sách các vé gần đây của bạn"
+        },
+        "vecuatoiFieldHeader":[
+            {
+                "name": "Mã vòng quay",
+                "value": "",
+                "inline": true
+            },
+            {
+                "name": "Ngày tham gia",
+                "value": "",
+                "inline": true
+            },
+            {
+                "name": "Kết quả",
+                "value": "",
+                "inline": true
+            }
+        ],
+        "vecuatoiField": [
+            {
+                "name": "",
+                "value": "{:DRAW_ID}",
+                "inline": true
+            },
+            {
+                "name": "",
+                "value": "{:JOIN_DATE}",
+                "inline": true
+            },
+            {
+                "name": "",
+                "value": "{:IS_MATCHED}",
+                "inline": true
+            }
+        ],
+        "vecuatoiFooter": {
+            "footer": {
+                "text": "Page {:CURRENT_PAGE}/{:TOTAL_PAGE}"
+            }
+        },
+        "trogiup": {
+            "title": "Xổ Số Kiến Cắn",
+            "description": "Các câu lệnh cơ bản để tham gia Xổ Số Kiến Cắn.\n**/banveso** - Khởi tạo chương trình *Xổ Số Kiến Cắn* tại kênh chat hiện tại.\n**/muaveso [số may mắn]** - đăng ký tham gia xổ số.\n**/vecuatoi** - Xem danh sách các lần tham gia.\n**/ketqua [mã vòng quay]** - Xem thông tin của vòng quay đó.\n**/lichsu** - Tra cứu lịch sử các vòng quay."
+        },
+        "thongbaoketquahangngay": {
+            "title": "Xổ Số Kiến Cắn",
+            "description": "Kết quả chương trình Xổ Số Kiến Cắn, xổ số hằng ngày vào lúc 16:30.",
+            "fields": [
+                {
+                    "name": "Mã vòng quay",
+                    "value": "{:DRAW_ID}"
+                },
+                {
+                    "name": "Thời gian",
+                    "value": "{:DRAW_TIME}"
+                },
+                {
+                    "name": "Số may mắn",
+                    "value": "{:LUCKY_NUMBER}"
+                }
+            ]
+        },
+        "thongbaoketquahangngayFollowup": {
+            "title": "Xổ Số Kiến Cắn",
+            "description": "Xin chúc mừng {:WINNERS} đã có số may mắn trùng khớp với kết quả xổ số.",
+            "fields": [
+                {
+                    "name": "Mã vòng quay",
+                    "value": "{:DRAW_ID}"
+                },
+                {
+                    "name": "Phần thưởng",
+                    "value": "{:PRIZE}"
+                }
+            ]
+        },
+        "thongbaophienxosomoi": {
+            "title": "Xổ Số Kiến Cắn",
+            "description": "Phiên xổ số mới đã bắt đầu. Mại dô! Mại dô!",
+            "fields": [
+                {
+                    "name": "Mã vòng quay",
+                    "value": "{:DRAW_ID}"
+                },
+                {
+                    "name": "Thời gian xổ số",
+                    "value": "{:DRAW_TIME}"
+                },
+                {
+                    "name": "Phần thưởng",
+                    "value": "{:PRIZE}"
+                }
+            ]
+        }
+    },
+    "modals": {
+        "banveso": {
+
+        }
+    }
+}

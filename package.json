@@ -1,0 +1,30 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/start-bot.ts",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "start:register": "npx nodemon command:register",
+    "start:delete": "npx nodemon command:delete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-schedule": "^2.1.1",
+    "@types/pg": "^8.10.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescipt": "^1.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "moment": "^2.29.4",
+    "node-schedule": "^2.1.1",
+    "pg": "^8.11.3",
+    "pino": "^8.15.1",
+    "pino-pretty": "^10.2.0"
+  }
+}
